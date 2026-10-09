@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.coverage
+coverage/
+
+# Sistema e editores
+.DS_Store
+.vscode/
+.idea/
+
+# Outras pilhas (padrão da casa)
+node_modules/

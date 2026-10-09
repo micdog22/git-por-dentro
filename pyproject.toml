@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "git-por-dentro"
+version = "1.0.0"
+description = "Um mini Git em Python que grava o formato real do Git, para entender como o Git funciona por dentro."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["git", "educacional", "sha-1", "zlib", "controle-de-versao"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX",
+    "Topic :: Software Development :: Version Control :: Git",
+    "Topic :: Education",
+    "Natural Language :: Portuguese (Brazilian)",
+]
+
+[project.urls]
+Homepage = "https://github.com/micdog22/git-por-dentro"
+
+[project.scripts]
+mini-git = "git_por_dentro.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
